@@ -1,0 +1,24 @@
+{
+  "files": {
+    "templates/view.html": [
+      {
+        "id": "f365fa0e-8b9f-4835-ad21-3356fb18d012",
+        "line": 14,
+        "version": 766,
+        "index": 473
+      },
+      {
+        "id": "5303b93c-8d17-414f-ac24-c095bf536cae",
+        "line": 16,
+        "version": 766,
+        "index": 621
+      },
+      {
+        "id": "898906bf-6862-4ee4-ad6d-9014f832792e",
+        "line": 31,
+        "version": 766,
+        "index": 1170
+      }
+    ]
+  }
+}

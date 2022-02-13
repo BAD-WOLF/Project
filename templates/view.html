@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="mostrando seu estoque">
+    <title>show estoque</title>
+    <meta name="theme-color" content="#4285f4"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/default.css')}}"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='style/view.css')}}"/>
+  </head>
+
+  <body style="background-image:url({{url_for('static',filename='view.png')}});">
+    <nav class='menu'>
+    <a href="/" class="button button1">Home</a></br>
+    <a href="/view" class="button button1">View</a>
+    </nav>
+    <div id='show'>
+      {% for produto in data %}
+      <form class='box' method="POST" action='/view'>
+        <p>Id:{{produto['id']}}</p>
+        <p>Codigo:{{produto['codigo']}}</p>
+        <p>Nome:{{produto['nome']}}</p>
+        <p>Quantidade:{{produto['quantidade']}}</p>
+        <p>Descrição:{{produto['descricao']}}</p>
+        <button type="submit" name="id" value={{produto['id']}} class="button button2">deletar</button>
+      </form>
+      {% endfor %}
+    </div>
+  </body>
+
+</html>

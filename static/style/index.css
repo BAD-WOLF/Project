@@ -1,0 +1,38 @@
+input[type=submit] {width: 320px;}
+#id1 {
+  width: 150px;
+  margin-left: 13px;
+}
+
+#id2{
+  width: 150px;
+}
+
+input {
+  text-inlign: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #fef0ff;​•​
+  border-radius: 4px;
+  margin: 5px 6px;
+  width: 318px;
+}
+
+.div {
+  background-image: url(css.png);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+  border-radius: 12px;
+  margin-left:17px;
+  width:335px;
+  height:180px;
+}
+
+.messager_server{
+  background-color: #00ff00;
+  color:white;
+  text-align: 'center'
+}

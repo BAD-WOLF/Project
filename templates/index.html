@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="estoque free, teste a vontade sem pagar nada">
+  <meta name="theme-color" content="#4285f4"/>
+  <link rel="stylesheet" href="{{url_for('static',filename='style/default.css')}}"/>
+  <link rel="stylesheet" href="{{url_for('static',filename='style/index.css')}}"/>
+  <title>estoque</title>
+</head>
+
+<body style="background-image:url({{url_for('static',filename='R.jpeg')}});">
+  <div class="div">
+    <a id="id1" ref="/" class="button button1">Home</a>
+    <a id="id2" href="/view" class="button button1">View</a>
+    </nav>
+
+  <form method="post" action='/'>
+    <input type="text" placeholder="Codigo" name='codigo'/>
+    </br>
+    <input type="text" placeholder="Nome" name='nome'/>
+    </br>
+    <input type="number" step="0.1" placeholder="Quantidade" name='quantidade'/>
+    </br>
+    <input type="text" name='Descricao' placeholder="descrição"/>
+    </br>
+    <input class="button button1" type="submit"/>
+  </form>
+  </div>
+  <!-- SERVIDOR -->
+  {% if 'message' in resp %}
+    <p class='messager_server'>{{resp['message']}}</p>
+  {% endif %}
+  <!-- END SERVIDOR -->
+
+</body
+</html>

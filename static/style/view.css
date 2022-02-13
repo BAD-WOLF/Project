@@ -1,0 +1,12 @@
+.box{
+  background-color: orange;
+  border: 1px black solid;
+  inline-size: min-content;
+  padding: 3px 13px;
+}
+
+#show{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
